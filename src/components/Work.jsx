@@ -30,7 +30,7 @@ function Work() {
         </p>
         <div className="elems sm:flex-wrap sm:flex mt-7">
           <div className="elem w-full  sm:w-[50%]">
-            <div className="video relative w-full  overflow-hidden h-[60vw]">
+            <div className="video relative w-full  overflow-hidden h-[104vw] sm:h-[60vw]">
               <img
                 className="hidden sm:block w-full h-full object-cover"
                 src="https://a.storyblok.com/f/133769/2409x3000/b5ccf4619b/studio-d-hero.jpg/m/1300x1619/filters:format(jpeg):quality(70)"
@@ -51,8 +51,8 @@ function Work() {
               Urban and landscape design
             </h5>
           </div>
-          <div className="elem w-full  sm:w-[35%] ">
-            <div className="video relative w-full overflow-hidden h-[35vw]">
+          <div className="elem  w-full sm:w-[35%] ">
+            <div className="video relative w-full overflow-hidden sm:h-[35vw] h-[104vw]">
               <img
                 className="hidden sm:block w-full h-full object-cover"
                 src="https://a.storyblok.com/f/133769/2500x3113/78edf86efd/rino-pelle-hero.jpg/m/1300x1619/filters:format(jpeg):quality(70)"
