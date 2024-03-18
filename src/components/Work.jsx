@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 
 function Work() {
   return (
@@ -10,7 +10,7 @@ function Work() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="w-4"
-            data-v-669b4a84=""
+            data-v-669b4a84="" 
           >
             <path
               d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z"
