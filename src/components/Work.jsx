@@ -33,11 +33,7 @@ function Work() {
                 src="https://a.storyblok.com/f/133769/2409x3000/b5ccf4619b/studio-d-hero.jpg/m/1300x1619/filters:format(jpeg):quality(70)"
                 alt=""
               />
-              <video
-                autoPlay
-                muted
-                loop
-                className="block sm:hidden w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              <video className="block sm:hidden w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 src="https://player.vimeo.com/progressive_redirect/playback/914798702/rendition/720p/file.mp4?loc=external&log_user=0&signature=b76cb0994de6beca7f6ba29e7eb52db1750d34600352dab2566c6ca16fcd817f"
               ></video>
             </div>
@@ -57,9 +53,7 @@ function Work() {
                 alt=""
               />
               <video
-                autoPlay
-                muted
-                loop
+               
                 className="block sm:hidden w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 src="https://player.vimeo.com/progressive_redirect/playback/914798484/rendition/720p/file.mp4?loc=external&log_user=0&signature=666d8099e0f1361eb1766ec0592b63a9bdf2b303cdb12ddfa5789d20ce8f523b"
               ></video>
@@ -82,9 +76,7 @@ function Work() {
                 alt=""
               />
               <video
-                autoPlay
-                muted
-                loop
+                
                 className="block sm:hidden w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 src="https://player.vimeo.com/progressive_redirect/playback/914796979/rendition/540p/file.mp4?loc=external&log_user=0&signature=57ac30ff6fc3b29802f7414617e808395306f0b0fa5c9c6e3ef483a532f49c15"
               ></video>
