@@ -26,7 +26,7 @@ function Work() {
           clients and friends over the years
         </p>
         <div className="elems sm:flex-wrap sm:flex mt-7">
-          <div className="elem w-full relative  sm:w-[50%]">
+          <div className="elem w-full sm:w-[50%]">
             <div className="video relative w-full  overflow-hidden h-[104vw] sm:h-[50vw]">
               <img
                 className="hidden sm:block w-full h-full object-cover"
