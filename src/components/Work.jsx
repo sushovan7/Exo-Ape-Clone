@@ -1,5 +1,3 @@
-
-
 function Work() {
   return (
     <div className="w-full relative">
@@ -10,7 +8,7 @@ function Work() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="w-4"
-            data-v-669b4a84="" 
+            data-v-669b4a84=""
           >
             <path
               d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z"
@@ -28,7 +26,7 @@ function Work() {
           clients and friends over the years
         </p>
         <div className="elems sm:flex-wrap sm:flex mt-7">
-          <div className="elem w-full  sm:w-[50%]">
+          <div className="elem w-full relative  sm:w-[50%]">
             <div className="video relative w-full  overflow-hidden h-[104vw] sm:h-[50vw]">
               <img
                 className="hidden sm:block w-full h-full object-cover"
