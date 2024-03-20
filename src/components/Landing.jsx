@@ -2,7 +2,7 @@ import React from "react";
 
 function Landing() {
   return (
-    <div className="w-full relative h-[150vh] sm:h-[250vh]">
+    <div className="w-full relative h-[110vh] sm:h-[250vh]">
       <div className="picture w-full h-full">
         <img
           className="w-full h-full object-cover"
