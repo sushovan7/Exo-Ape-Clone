@@ -3,6 +3,10 @@ import Navbar from './components/Navbar'
 import Landing from './components/Landing'
 import Work from './components/Work'
 import Hero from './components/Hero'
+import Images from './components/Images'
+import News from './components/News'
+import Footer from './components/Footer'
+
 
 function App() {
   return (
@@ -11,6 +15,9 @@ function App() {
   <Landing />
   <Work />
   <Hero />
+  <Images />
+  <News />
+  <Footer />
  </div>
   )
 }
