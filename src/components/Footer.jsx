@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='w-100% h-screen bg-black px-7 py-16 flex flex-col items-start gap-4 text-[#E0CCBB]'>
+    <div className='w-100% h-screen overflow-hidden bg-black px-7 py-16 flex flex-col items-start justify-center gap-4 text-[#E0CCBB]'>
         <div className='flex items-center gap-2 mb-7'>
             <h1 className='w-40% text-6xl '>Our Story</h1>
             <video src=""></video>
