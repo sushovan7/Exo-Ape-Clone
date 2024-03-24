@@ -5,8 +5,10 @@ import { Expo } from "gsap";
 function Landing() {
   return (
     <div className="w-full relative h-[110vh] sm:h-[250vh]">
-      <div className="picture w-full h-full">
+      <div className="picture overflow-hidden w-full h-full">
         <img
+        data-scroll
+        data-scroll-speed='-1.3'
           className="w-full h-full object-cover"
           src="https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/1920x2716/filters:format(jpeg):quality(70)"
         ></img>
@@ -22,11 +24,12 @@ function Landing() {
             ].map((item, i) => {
               return (
                 <p className="font-md overflow-hidden origin-left sm:text-2xl ">
-                  <motion.span className="inline-block"
+                  <motion.span
+                    className="inline-block"
                     initial={{
                       opacity: 0,
                       rotate: 90,
-                      y: '100%',
+                      y: "100%",
                     }}
                     animate={{ opacity: 1, rotate: 0, y: 0 }}
                     transition={{
@@ -42,15 +45,28 @@ function Landing() {
             })}
           </div>
           <div className="headings mt-5 sm:mt-20">
-            <h1 className="text-7xl sm:text-[17rem] tracking-tighter leading-none font-lighter">
-              Digital
-            </h1>
-            <h1 className="text-7xl  sm:text-[17rem] sm:text-9xl tracking-tighter leading-none font-lighter">
-              Design
-            </h1>
-            <h1 className="text-7xl sm:text-[17rem] sm:text-9xl tracking-tighter leading-none font-lighter">
-              Experience
-            </h1>
+            {["Digital", "Experience", "Studio"].map((item, i) => {
+              return (
+                <h1 className="text-7xl sm:text-[17rem] tracking-tighter leading-none font-lighter overflow-hidden">
+                  <motion.span
+                    className="inline-block"
+                    initial={{
+                      opacity: 0,
+                      rotate: 10,
+                      y: "100%",
+                    }}
+                    animate={{ opacity: 1, rotate: 0, y: 0 }}
+                    transition={{
+                      ease: Expo.easeInOut,
+                      duration: 1,
+                      delay:1+ i * 0.3,
+                    }}
+                  >
+                    {item}
+                  </motion.span>
+                </h1>
+              );
+            })}
           </div>
           <div className="para-2 sm:w-1/3 mt-10">
             <p className=" text-lg sm:text-xl w-full">

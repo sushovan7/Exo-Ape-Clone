@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function Work() {
   return (
     <div className="w-full relative">
@@ -19,7 +21,12 @@ function Work() {
           <h3 className="capitalize">featured projects</h3>
         </div>
         <div className="py-7 sm:py-14">
-          <h1 className="text-6xl sm:text-[15rem]">Work</h1>
+          <h1 className="text-6xl overflow-hidden sm:text-[15rem]"><motion.span
+          initial={{y:'70%',opacity:0}} 
+          whileInView={{y:0,opacity:1}}
+          transition={{ease:[0.32, 0, 0.67, 0], duration:1}}
+          viewport={{once:true}}
+          className="inline-block origin-left">Work</motion.span></h1>
         </div>
         <p className="text-xl sm:w-[30%] sm:absolute  sm:right-[11%] sm:top-[19%] leading-2 sm:text-2xl ">
           Highlights of cases that we passionately built with forward-thinking
@@ -28,8 +35,10 @@ function Work() {
         <div className="elems sm:flex-wrap sm:flex mt-7">
           <div className="elem w-full sm:w-[50%]">
             <div className="video relative w-full  overflow-hidden h-[104vw] sm:h-[50vw]">
-              <img
-                className="hidden sm:block w-full h-full object-cover"
+              <motion.img
+             initial={{opacity:1}}
+             whileHover={{opacity:0}}
+                className="hidden sm:absolute sm:z-[2] sm:block sm:top-0 sm:left-0 w-full h-full object-cover"
                 src="https://a.storyblok.com/f/133769/2409x3000/b5ccf4619b/studio-d-hero.jpg/m/1300x1619/filters:format(jpeg):quality(70)"
                 alt=""
               />
@@ -37,7 +46,7 @@ function Work() {
                 autoPlay
                 muted
                 loop
-                className="block sm:hidden w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                className="block  w-full z-[1] scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 src="https://player.vimeo.com/progressive_redirect/playback/914798702/rendition/720p/file.mp4?loc=external&log_user=0&signature=b76cb0994de6beca7f6ba29e7eb52db1750d34600352dab2566c6ca16fcd817f"
               ></video>
             </div>
@@ -51,8 +60,10 @@ function Work() {
 
           <div className="elem  w-full sm:-mt-[40%] sm:w-[30%] sm:ml-[60%]">
             <div className="video relative w-full overflow-hidden sm:h-[35vw] h-[104vw]">
-              <img
-                className="hidden sm:block w-full h-full object-cover"
+              <motion.img
+               initial={{opacity:1}}
+               whileHover={{opacity:0}}
+                className="hidden sm:absolute sm:z-[2]  sm:block w-full h-full object-cover"
                 src="https://a.storyblok.com/f/133769/2500x3113/78edf86efd/rino-pelle-hero.jpg/m/1300x1619/filters:format(jpeg):quality(70)"
                 alt=""
               />
@@ -60,7 +71,7 @@ function Work() {
                 autoPlay
                 muted
                 loop
-                className="block sm:hidden w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                className="block z-[1]  w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 src="https://player.vimeo.com/progressive_redirect/playback/914798484/rendition/720p/file.mp4?loc=external&log_user=0&signature=666d8099e0f1361eb1766ec0592b63a9bdf2b303cdb12ddfa5789d20ce8f523b"
               ></video>
             </div>
@@ -76,8 +87,10 @@ function Work() {
 
           <div className="elem w-full  sm:w-[35%] sm:ml-[40%] sm:mt-[12%]">
             <div className="video relative w-full overflow-hidden sm:h-[50vw] h-[105vw]">
-              <img
-                className="hidden sm:block w-full h-full object-cover"
+              <motion.img
+                initial={{opacity:1}}
+                whileHover={{opacity:0}}
+                className="hidden sm:absolute sm:z-[2]  sm:block w-full h-full object-cover"
                 src="https://a.storyblok.com/f/133769/1606x2000/09a30057bd/aebele-interiors-hero.jpg/m/1300x1619/filters:format(jpeg):quality(70)"
                 alt=""
               />
@@ -85,7 +98,7 @@ function Work() {
                 autoPlay
                 muted
                 loop
-                className="block sm:hidden w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                className="block z-[1]  w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 src="https://player.vimeo.com/progressive_redirect/playback/914796979/rendition/540p/file.mp4?loc=external&log_user=0&signature=57ac30ff6fc3b29802f7414617e808395306f0b0fa5c9c6e3ef483a532f49c15"
               ></video>
             </div>
@@ -100,8 +113,10 @@ function Work() {
           </div>
           <div className="elem w-full  sm:w-[25%] sm:-ml-[70%] sm:mt-[55%]">
             <div className="video relative w-full overflow-hidden sm:h-[25vw] h-[105vw]">
-              <img
-                className="hidden sm:block w-full h-full object-cover"
+              <motion.img
+                initial={{opacity:1}}
+                whileHover={{opacity:0}}
+                className="hidden sm:absolute sm:z-[2]  sm:block w-full h-full object-cover"
                 src="https://a.storyblok.com/f/133769/2880x3588/5c50befb8e/pixel-flakes-hero.jpg/m/1300x1620/filters:format(jpeg):quality(70)"
                 alt=""
               />
@@ -109,7 +124,7 @@ function Work() {
                 autoPlay
                 muted
                 loop
-                className="block sm:hidden w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                className="block z-[1]  w-full scale-[1.3] h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 src="https://player.vimeo.com/progressive_redirect/playback/914798271/rendition/720p/file.mp4?loc=external&log_user=0&signature=2af493277d050009920c26416a8d62a9a8c316353242c609ee157fcf1e300076"
               ></video>
             </div>
