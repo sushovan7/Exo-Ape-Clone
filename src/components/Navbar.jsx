@@ -1,11 +1,23 @@
 import React from "react";
 import { IoMenuOutline } from "react-icons/io5";
+import { Expo,Power4 } from "gsap";
+import { motion } from "framer-motion";
 
 function Navbar() {
   return (
     <div className="w-full fixed z-[999]">
       <div className="max-w-screen-2xl mx-auto  px-5 py-5 sm:px-10 sm:py-10 flex items-center justify-between text-white">
-        <div className="logo">
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          viewport={{once:true}}
+          transition={{expo: Power4.easeInOut, duration:1}}
+          className="logo"
+        >
           <svg
             viewBox="0 0 95 25"
             fill="none"
@@ -44,11 +56,29 @@ function Navbar() {
               data-v-1932cced=""
             ></path>
           </svg>
-        </div>
-        <span className="text-2xl sm:hidden">
+        </motion.div>
+        <motion.span
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          viewport={{once:true}}
+          transition={{expo: Power4.easeInOut, duration:1}} className="text-2xl sm:hidden">
           <IoMenuOutline />
-        </span>
-        <div className="links hidden sm:flex items-center gap-10">
+        </motion.span>
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          viewport={{once:true}}
+          transition={{expo: Power4.easeInOut, duration:1}}
+          className="links hidden sm:flex items-center gap-10"
+        >
           {["Home", "About", "Pricing", "Contact"].map((item, index) => {
             return (
               <a className="text-sm font-light " key={index} href="">
@@ -56,7 +86,7 @@ function Navbar() {
               </a>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

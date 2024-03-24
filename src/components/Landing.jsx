@@ -1,4 +1,6 @@
 import React from "react";
+import {motion} from 'framer-motion'
+import { Expo } from "gsap";
 
 function Landing() {
   return (
@@ -12,16 +14,19 @@ function Landing() {
       <div className="absolute top-0 w-full  ">
         <div className="text max-w-screen-2xl mx-auto px-5 h-full text-white  py-5 sm:px-10 sm:ml-20">
           <div className="para mt-72 sm:mt-[25rem]">
-            <p className="font-md sm:text-2xl ">
-              Global digital design studio patnering
-            </p>
-            <p className="text-md font-md sm:text-2xl">
-              with brands and businesses that create{" "}
-            </p>
-            <p className="text-md font-md sm:text-2xl">
-              exceptional experiences where people{" "}
-            </p>
-            <p className="text-md font-md sm:text-2xl">live,work,and unwind.</p>
+            {[
+              " Global digital design studio patnering",
+              " with brands and businesses that create",
+              "exceptional experiences where people",
+              "live,work,and unwind.",
+            ].map((item, i) => {
+              return <p  className="font-md overflow-hidden origin-left sm:text-2xl "><motion.span initial={{
+                opacity:0,
+                rotate:100,
+                y:100,
+              }} animate={{opacity:1,rotate:0,y:0
+              }} transition={{ease:Expo.easeInOut,duration:1,delay:i*.3}}>{item}</motion.span></p>;
+            })}
           </div>
           <div className="headings mt-5 sm:mt-20">
             <h1 className="text-7xl sm:text-[17rem] tracking-tighter leading-none font-lighter">
