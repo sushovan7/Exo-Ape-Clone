@@ -1,5 +1,5 @@
 import React from "react";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 import { Expo } from "gsap";
 
 function Landing() {
@@ -20,12 +20,25 @@ function Landing() {
               "exceptional experiences where people",
               "live,work,and unwind.",
             ].map((item, i) => {
-              return <p  className="font-md overflow-hidden origin-left sm:text-2xl "><motion.span initial={{
-                opacity:0,
-                rotate:100,
-                y:100,
-              }} animate={{opacity:1,rotate:0,y:0
-              }} transition={{ease:Expo.easeInOut,duration:1,delay:i*.3}}>{item}</motion.span></p>;
+              return (
+                <p className="font-md overflow-hidden origin-left sm:text-2xl ">
+                  <motion.span className="inline-block"
+                    initial={{
+                      opacity: 0,
+                      rotate: 100,
+                      y: 100,
+                    }}
+                    animate={{ opacity: 1, rotate: 0, y: 0 }}
+                    transition={{
+                      ease: Expo.easeInOut,
+                      duration: 1,
+                      delay: i * 0.3,
+                    }}
+                  >
+                    {item}
+                  </motion.span>
+                </p>
+              );
             })}
           </div>
           <div className="headings mt-5 sm:mt-20">
