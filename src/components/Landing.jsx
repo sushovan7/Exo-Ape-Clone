@@ -25,8 +25,8 @@ function Landing() {
                   <motion.span className="inline-block"
                     initial={{
                       opacity: 0,
-                      rotate: 100,
-                      y: 100,
+                      rotate: 90,
+                      y: '100%',
                     }}
                     animate={{ opacity: 1, rotate: 0, y: 0 }}
                     transition={{
